@@ -13,3 +13,8 @@ source activate tensorflow
 yes | pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.0-py3-none-any.whl
 yes | pip install --ignore-installed --upgrade matplotlib
 ```
+Problem with installation matplotlib on MacOS (it will throw you some errors mention matplotlib)
+```bash
+cd ~/.matplotlib
+echo 'backend: TkAgg' >> matplotlibrc
+```
